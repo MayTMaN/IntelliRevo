@@ -1,5 +1,6 @@
 package com.github.maytman.intellir.revo;
 
+import com.github.maytman.intellir.revo.icons.RevoIcons;
 import com.intellij.openapi.fileTypes.LanguageFileType;
 import com.intellij.openapi.util.NlsContexts;
 import com.intellij.openapi.util.NlsSafe;
@@ -34,6 +35,6 @@ public class RevoFileType extends LanguageFileType {
 
     @Override
     public @Nullable Icon getIcon() {
-        return null;
+        return RevoIcons.FILE;
     }
 }

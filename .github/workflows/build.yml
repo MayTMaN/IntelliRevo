@@ -34,8 +34,8 @@ jobs:
       - name: Maximize Build Space
         uses: jlumbroso/free-disk-space@v2.0.0
         with:
-          tool-cache: false
-          large-packages: false
+          tool-cache: true
+          large-packages: true
 
       # Check out the current repository
       - name: Fetch Sources
