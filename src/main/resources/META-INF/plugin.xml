@@ -19,5 +19,8 @@
                 extensions="rv"/>
         <platform.lsp.serverSupportProvider
                 implementation="com.github.maytman.intellir.revo.lsp.RevoLspIntegration"/>
+        <lang.commenter
+                language="Revo"
+                implementationClass="com.github.maytman.intellir.revo.editor.RevoCommenter"/>
     </extensions>
 </idea-plugin>
