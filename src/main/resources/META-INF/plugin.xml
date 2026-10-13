@@ -4,10 +4,11 @@
     <name>IntelliR</name>
     <vendor>maytman</vendor>
     <description><![CDATA[
-        <p><b>IntelliR</b> is a plugin that implements révo support in JetBrain IDEs</p>
+        <p><b>IntelliR</b> is a plugin that implements revo support in JetBrains IDEs</p>
     ]]></description>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lsp</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <fileType
@@ -16,5 +17,7 @@
                 fieldName="INSTANCE"
                 language="Revo"
                 extensions="rv"/>
+        <platform.lsp.serverSupportProvider
+                implementation="com.github.maytman.intellir.revo.lsp.RevoLspIntegration"/>
     </extensions>
 </idea-plugin>
