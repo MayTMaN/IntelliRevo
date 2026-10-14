@@ -22,5 +22,16 @@
         <lang.commenter
                 language="Revo"
                 implementationClass="com.github.maytman.intellir.revo.editor.RevoCommenter"/>
+        <internalFileTemplate name="RevoTemplate"/>
     </extensions>
+
+    <actions>
+        <action
+                id="com.github.maytman.intellir.revo.editor.fileTemplate.CreateRevoFileAction"
+                class="com.github.maytman.intellir.revo.editor.fileTemplate.CreateRevoFileAction"
+                text="Revo File"
+                icon="/icons/revo.png">
+            <add-to-group group-id="NewGroup" anchor="before" relative-to-action="NewFile"/>
+        </action>
+    </actions>
 </idea-plugin>
