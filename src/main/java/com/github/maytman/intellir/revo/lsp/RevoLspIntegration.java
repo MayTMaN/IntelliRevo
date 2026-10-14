@@ -1,12 +1,14 @@
 package com.github.maytman.intellir.revo.lsp;
 
 import com.github.maytman.intellir.revo.RevoFileType;
+import com.github.maytman.intellir.revo.lsp.customization.RevoLspCustomization;
 import com.intellij.execution.ExecutionException;
 import com.intellij.execution.configurations.GeneralCommandLine;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.platform.lsp.api.LspServerSupportProvider;
 import com.intellij.platform.lsp.api.ProjectWideLspServerDescriptor;
+import com.intellij.platform.lsp.api.customization.LspCustomization;
 import org.jetbrains.annotations.NotNull;
 
 public class RevoLspIntegration implements LspServerSupportProvider {
@@ -36,6 +38,11 @@ public class RevoLspIntegration implements LspServerSupportProvider {
         @Override
         public @NotNull GeneralCommandLine createCommandLine() throws ExecutionException {
             return new GeneralCommandLine("revo", "lsp");
+        }
+
+        @Override
+        public @NotNull LspCustomization getLspCustomization() {
+            return new RevoLspCustomization();
         }
     }
 
