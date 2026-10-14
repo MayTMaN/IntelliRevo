@@ -1,6 +1,8 @@
 package com.github.maytman.intellir.revo.lsp;
 
 import com.github.maytman.intellir.revo.RevoFileType;
+import com.github.maytman.intellir.revo.editor.settings.RevoSettings;
+import com.github.maytman.intellir.revo.editor.settings.RevoSettingsConfigurable;
 import com.github.maytman.intellir.revo.lsp.customization.RevoLspCustomization;
 import com.intellij.execution.ExecutionException;
 import com.intellij.execution.configurations.GeneralCommandLine;
@@ -37,7 +39,12 @@ public class RevoLspIntegration implements LspServerSupportProvider {
 
         @Override
         public @NotNull GeneralCommandLine createCommandLine() throws ExecutionException {
-            return new GeneralCommandLine("revo", "lsp");
+            if(RevoSettings.getInstance().getRevoPath().trim().isBlank()) {
+                return new GeneralCommandLine("revo", "lsp");
+            } else {
+                return new GeneralCommandLine(RevoSettings.getInstance().getRevoPath(), "lsp");
+            }
+
         }
 
         @Override

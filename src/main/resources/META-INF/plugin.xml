@@ -26,6 +26,13 @@
                 language="Revo"
                 implementationClass="com.github.maytman.intellir.revo.editor.RevoCommenter"/>
         <internalFileTemplate name="RevoTemplate"/>
+        <applicationService
+                serviceImplementation="com.github.maytman.intellir.revo.editor.settings.RevoSettings"/>
+        <applicationConfigurable
+                parentId="tools"
+                instance="com.github.maytman.intellir.revo.editor.settings.RevoSettingsConfigurable"
+                id="com.github.maytman.intellir.revo.editor.settings.RevoSettingsConfigurable"
+                displayName="Revo"/>
     </extensions>
 
     <actions>

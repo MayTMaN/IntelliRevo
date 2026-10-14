@@ -5,8 +5,6 @@ import org.jetbrains.annotations.Nullable;
 
 public class RevoCommenter implements Commenter {
 
-    //this commenter is kinda useless right now cause there is no parser definition
-
     @Override
     public @Nullable String getLineCommentPrefix() {
         return "#";
