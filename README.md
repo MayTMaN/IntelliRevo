@@ -1,5 +1,5 @@
 # IntelliRevo
-![Build](https://github.com/MayTMaN/IntelliR/workflows/Build/badge.svg)
+![Build](https://github.com/MayTMaN/IntelliRevo/workflows/Build/badge.svg)
 [![Version](https://img.shields.io/jetbrains/plugin/v/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
 
@@ -13,7 +13,7 @@
 
 - Manually :
 
-  Download the [latest release](https://github.com/MayTMaN/IntelliR/releases/latest) and install it manually using
+  Download the [latest release](https://github.com/MayTMaN/IntelliRevo/releases/latest) and install it manually using
   <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
 
 
@@ -22,7 +22,7 @@
 - have [revo](https://github.com/if-not-nil/revo) installed with its lsp
 - have [revo](https://github.com/if-not-nil/revo) available on PATH
 
-you can set PATH manually, or using <kbd>Settings</kbd> > <kbd>Tools</kbd> > <kbd>Revo</kbd> in IntelliJ
+you can set PATH manually, or set its location using <kbd>Settings</kbd> > <kbd>Tools</kbd> > <kbd>Revo</kbd> in IntelliJ
 
 <img width="379" height="90" alt="image" src="https://github.com/user-attachments/assets/3e69a6a5-f786-4bc1-a817-0d95d87932ef" />
 

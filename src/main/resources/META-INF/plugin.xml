@@ -1,11 +1,50 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.maytman.intellir</id>
-    <name>IntelliR</name>
+    <id>com.github.maytman.intellirevo</id>
+    <name>IntelliRevo</name>
     <vendor>maytman</vendor>
     <description><![CDATA[
-        <p><b>IntelliR</b> is a plugin that implements revo support in JetBrains IDEs</p>
+        <p>Language support for <a href="https://github.com/if-not-nil/revo">revo</a>,
+        an expressive, dynamically-typed programming language.</p>
+
+        <h2>Features</h2>
+        <ul>
+          <li><code>.rv</code> file recognition</li>
+          <li>creating new <code>.rv</code> files</li>
+          <li>running <code>.rv</code> files</li>
+        </ul>
+        <h3>revo's lsp support</h3>
+        <ul>
+           <li>syntax highlighting</li>
+           <li>errors and warnings</li>
+           <li>hover documentation</li>
+           <li>go to definition</li>
+           <li>find usages</li>
+        </ul>
+
+        <h2>Requirements</h2>
+        <ul>
+           <li>have <a href="https://github.com/if-not-nil/revo">revo</a> installed with its <code>lsp</code></li>
+           <li>have <a href="https://github.com/if-not-nil/revo">revo</a> available on PATH</li>
+        </ul>
+        <hr>
+        <p>you can set PATH manually, or set its location using <b>Settings > Tools > Revo</b> in IntelliJ</p>
+        <p>see the <a href="https://github.com/if-not-nil/revo">revo repository</a> for installation instructions</p>
+
     ]]></description>
+
+    <change-notes><![CDATA[
+        <h3>1.0.0</h3>
+        <h4>Added</h4>
+        <ul>
+          <li><code>.rv</code> file type with icon</li>
+          <li>code insight through revo's lsp: syntax highlighting, hover, go to definition, find usages</li>
+          <li>revo run configurations, with output in the Run window</li>
+          <li>line comments with Ctrl+/</li>
+          <li>creating <code>.rv</code> files (New > Revo File)</li>
+          <li>setting to configure the path to the revo executable (Settings > Tools > Revo)</li>
+        </ul>
+    ]]></change-notes>
 
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.modules.lsp</depends>
