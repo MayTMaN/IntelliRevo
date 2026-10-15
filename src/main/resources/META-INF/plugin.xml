@@ -33,6 +33,10 @@
                 instance="com.github.maytman.intellir.revo.editor.settings.RevoSettingsConfigurable"
                 id="com.github.maytman.intellir.revo.editor.settings.RevoSettingsConfigurable"
                 displayName="Revo"/>
+        <configurationType
+                implementation="com.github.maytman.intellir.revo.editor.runConfiguration.RevoRunConfigurationType"/>
+        <runConfigurationProducer
+                implementation="com.github.maytman.intellir.revo.editor.runConfiguration.RevoRunConfigurationProducer"/>
     </extensions>
 
     <actions>

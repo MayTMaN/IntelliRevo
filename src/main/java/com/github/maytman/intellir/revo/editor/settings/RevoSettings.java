@@ -1,5 +1,6 @@
 package com.github.maytman.intellir.revo.editor.settings;
 
+import com.intellij.execution.configurations.GeneralCommandLine;
 import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.components.PersistentStateComponent;
 import com.intellij.openapi.components.State;
@@ -16,11 +17,19 @@ public final class RevoSettings implements PersistentStateComponent<RevoSettings
         public String pathToRevo = "";
     }
 
-    public State myState = new State();
+    private State myState = new State();
 
     public static RevoSettings getInstance() {
         return ApplicationManager.getApplication()
                 .getService(RevoSettings.class);
+    }
+
+    public String getRevoExecutable() {
+        if(getRevoPath().isBlank()) {
+            return "revo";
+        } else {
+            return getRevoPath().trim();
+        }
     }
 
     @Override
