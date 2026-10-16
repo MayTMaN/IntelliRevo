@@ -1,7 +1,7 @@
 # IntelliRevo
 ![Build](https://github.com/MayTMaN/IntelliRevo/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/35161)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/35161)
+[![Version](https://img.shields.io/jetbrains/plugin/v/35161.svg)](https://plugins.jetbrains.com/plugin/35161)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/35161.svg)](https://plugins.jetbrains.com/plugin/35161)
 
 [revo](https://github.com/if-not-nil/revo) language support for JetBrains IDEs
 
@@ -9,7 +9,14 @@
 
 ### Plugin installation
 
-*waiting for JetBrains to approve this plugin*
+- Using the IDE built-in plugin system:
+
+  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "IntelliRevo"</kbd> >
+  <kbd>Install</kbd>
+
+- Using JetBrains Marketplace:
+
+  Go to [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/35161) and install it by clicking the <kbd>Install to ...</kbd> button in case your IDE is running.
 
 - Manually :
 
